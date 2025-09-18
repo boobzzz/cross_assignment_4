@@ -28,7 +28,7 @@ export function TabNavigator() {
                         />
                     ),
                     tabBarLabelStyle: {
-                        fontFamily: FONTS.BOLD,
+                        fontFamily: FONTS.REGULAR,
                         fontSize: 12
                     }
                 }} />

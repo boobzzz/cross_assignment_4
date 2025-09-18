@@ -1,13 +1,13 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialDesignIcons } from '@react-native-vector-icons/material-design-icons';
-import { CatalogueScreen } from '../screens/CatalogueScreen';
+import { ProductStack } from './ProductStack';
 import { CartScreen } from '../screens/CartScreen';
 import { ProfileScreen } from '../screens/ProfileScreen';
 import { COLORS, FONTS, ICONS, ROUTES } from '../utils/constants';
 
 const Tab = createBottomTabNavigator();
 const tabs = [
-    { name: ROUTES.CATALOGUE, icon: ICONS.CUP, component: CatalogueScreen },
+    { name: ROUTES.CATALOGUE, icon: ICONS.CUP, component: ProductStack },
     { name: ROUTES.CART, icon: ICONS.CART, component: CartScreen },
     { name: ROUTES.PROFILE, icon: ICONS.PROFILE, component: ProfileScreen }
 ];
@@ -27,6 +27,8 @@ export function TabNavigator() {
                             color={focused ? COLORS.PRIMARY : COLORS.SECONDARY}
                         />
                     ),
+                    animation: 'shift',
+                    headerShown: false,
                     tabBarLabelStyle: {
                         fontFamily: FONTS.REGULAR,
                         fontSize: 12

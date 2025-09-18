@@ -1,9 +1,17 @@
 import { StyleSheet, Text, TouchableOpacity, Image, View } from 'react-native';
-import { COLORS, FONTS } from '../utils/constants';
+import { useNavigation } from '@react-navigation/native';
+import { COLORS, FONTS, ROUTES } from '../utils/constants';
 
 export function CatalogueItem({ image, title, price }) {
+    const navigation = useNavigation();
+
     return (
-        <TouchableOpacity style={styles.container}>
+        <TouchableOpacity
+            style={styles.container}
+            onPress={() => navigation.navigate(ROUTES.DETAILS, {
+                name: title
+            })}
+        >
             <Image source={image} style={styles.image} />
             <View style={styles.text}>
                 <Text style={styles.title}>

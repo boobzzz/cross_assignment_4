@@ -1,7 +1,7 @@
 import { ScrollView, StyleSheet, View, Text } from 'react-native';
 import { CatalogueItem } from '../components/CatalogueItem';
-import {MaterialDesignIcons} from "@react-native-vector-icons/material-design-icons";
-import {COLORS, FONTS, ICONS} from "../utils/constants";
+import { MaterialDesignIcons } from '@react-native-vector-icons/material-design-icons';
+import { COLORS, FONTS, ICONS } from '../utils/constants';
 
 const cartItems = [];
 

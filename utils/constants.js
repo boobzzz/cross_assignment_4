@@ -24,8 +24,10 @@ export const ICONS = {
 
 export const ROUTES = {
     ROOT: 'root-navigator',
+    PRODUCT: 'product-navigator',
     MAIN_TABS: 'main-tab-navigator',
     CATALOGUE: 'Catalogue',
     CART: 'Cart',
-    PROFILE: 'Profile'
+    PROFILE: 'Profile',
+    DETAILS: 'Details'
 }

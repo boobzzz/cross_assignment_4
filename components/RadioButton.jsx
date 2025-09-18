@@ -1,6 +1,6 @@
 import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 import { MaterialDesignIcons } from '@react-native-vector-icons/material-design-icons';
-import { colors } from '../utils/constants';
+import { COLORS, FONTS } from '../utils/constants';
 
 export function RadioButton({ label, icon, selectedValue, onSelect }) {
     const isSelected = selectedValue === label;
@@ -12,7 +12,7 @@ export function RadioButton({ label, icon, selectedValue, onSelect }) {
             {icon && <MaterialDesignIcons
                          name={icon}
                          size={24}
-                         color={isSelected ? colors.primary : colors.secondary} />}
+                         color={isSelected ? COLORS.PRIMARY : COLORS.SECONDARY} />}
             {label && <Text style={[styles.text, isSelected && styles.textSelected]}>
                           {label}
                       </Text>}
@@ -30,20 +30,20 @@ const styles = StyleSheet.create({
         height: 40,
         borderStyle: 'solid',
         borderWidth: 2,
-        borderColor: colors.secondary,
+        borderColor: COLORS.SECONDARY,
         borderRadius: 20,
         backgroundColor: 'transparent'
     },
     containerSelected: {
-        borderColor: colors.primary
+        borderColor: COLORS.PRIMARY
     },
     text: {
-        fontFamily: 'Inter_500Medium',
+        fontFamily: FONTS.REGULAR,
         fontSize: 14,
-        color: colors.secondary,
+        color: COLORS.SECONDARY,
         textTransform: 'capitalize'
     },
     textSelected: {
-        color: colors.primary
+        color: COLORS.PRIMARY
     }
 });

@@ -1,5 +1,5 @@
-import {StyleSheet, Text, TouchableOpacity, Image, View} from 'react-native';
-import { colors } from '../utils/constants';
+import { StyleSheet, Text, TouchableOpacity, Image, View } from 'react-native';
+import { COLORS, FONTS } from '../utils/constants';
 
 export function CatalogueItem({ image, title, price }) {
     return (
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     container: {
         justifyContent: 'space-between',
         borderWidth: 1,
-        borderColor: colors.secondary,
+        borderColor: COLORS.SECONDARY,
         borderRadius: 12,
         backgroundColor: 'transparent',
         overflow: 'hidden'
@@ -36,13 +36,13 @@ const styles = StyleSheet.create({
         gap: 8
     },
     title: {
-        fontFamily: 'Inter_700Bold',
+        fontFamily: FONTS.BOLD,
         fontSize: 16,
-        color: colors.primary
+        color: COLORS.PRIMARY
     },
     price: {
-        fontFamily: 'Inter_500Medium',
+        fontFamily: FONTS.REGULAR,
         fontSize: 16,
-        color: colors.primary
+        color: COLORS.PRIMARY
     }
 });

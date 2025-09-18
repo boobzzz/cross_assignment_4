@@ -1,5 +1,5 @@
 import { StyleSheet, Text, TouchableOpacity } from 'react-native';
-import { colors } from '../utils/constants';
+import { COLORS, FONTS } from '../utils/constants';
 
 export function PrimaryButton({ name, onPress }) {
     return (
@@ -18,12 +18,12 @@ const styles = StyleSheet.create({
         width: '80%',
         height: 48,
         borderRadius: 12,
-        backgroundColor: colors.primary
+        backgroundColor: COLORS.PRIMARY
     },
     text: {
-        fontFamily: 'Inter_500Medium',
+        fontFamily: FONTS.REGULAR,
         fontSize: 14,
-        color: colors.lightest,
+        color: COLORS.LIGHTEST,
         textTransform: 'capitalize'
     }
 });

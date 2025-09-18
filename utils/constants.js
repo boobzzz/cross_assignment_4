@@ -1,12 +1,27 @@
-export const colors = {
-    primary: '#1e1e1e',
-    secondary: '#8f9098',
-    lightest: '#ffffff',
+export const FONTS = {
+    REGULAR: 'Inter_500Medium',
+    BOLD: 'Inter_700Bold'
+}
+
+export const COLORS = {
+    PRIMARY: '#1e1e1e',
+    SECONDARY: '#8f9098',
+    LIGHTEST: '#ffffff',
 };
 
-export const icons = {
-    beans: 'seed',
-    ground: 'coffee-maker-outline',
-    plus: 'plus',
-    minus: 'minus'
+export const ICONS = {
+    CUP: 'coffee',
+    CART: 'cart',
+    PROFILE: 'account',
+    BEANS: 'seed',
+    GROUND: 'coffee-maker-outline',
+    PLUS: 'plus',
+    MINUS: 'minus'
+}
+
+export const ROUTES = {
+    MAIN_TABS: 'main-tab-navigator',
+    CATALOGUE: 'Catalogue',
+    CART: 'Cart',
+    PROFILE: 'Profile'
 }

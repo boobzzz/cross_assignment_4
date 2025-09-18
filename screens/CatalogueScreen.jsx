@@ -1,20 +1,29 @@
-import { StyleSheet, Text } from 'react-native';
+import { ScrollView, StyleSheet } from 'react-native';
+import { CatalogueItem } from '../components/CatalogueItem';
+import { products } from '../products';
 
 export function CatalogueScreen({ navigation }) {
     return (
-        <Text style={styles.container}>
-            {/*Catalogue*/}
-        </Text>
+        <ScrollView contentContainerStyle={styles.container}>
+            {products.map(({ id, image, title, price }) => (
+                <CatalogueItem
+                    key={id}
+                    image={image}
+                    title={title}
+                    price={price}
+                />
+            ))}
+        </ScrollView>
     );
 }
 
 const styles = StyleSheet.create({
     container: {
-        // flex: 1,
-        // flexDirection: 'row',
+        flexDirection: 'row',
+        flexWrap: 'wrap',
         justifyContent: 'center',
         alignItems: 'center',
-        // gap: 8,
-        // backgroundColor: 'transparent'
+        gap: 8,
+        padding: 8
     }
 });

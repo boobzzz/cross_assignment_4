@@ -20,6 +20,7 @@ export const ICONS = {
 }
 
 export const ROUTES = {
+    ROOT: 'root-navigator',
     MAIN_TABS: 'main-tab-navigator',
     CATALOGUE: 'Catalogue',
     CART: 'Cart',
